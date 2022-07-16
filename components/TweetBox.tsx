@@ -124,7 +124,7 @@ function TweetBox({ setTweets }: Props) {
               />
               <button
                 type="submit"
-                onClick={addImageToTweet}
+                onClick={(e)=>addImageToTweet(e)}
                 className="font-bold  text-white"
               >
                 Add Image
