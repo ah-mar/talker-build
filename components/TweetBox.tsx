@@ -29,7 +29,7 @@ function TweetBox({ setTweets }: Props) {
   const [imageUrlBoxIsOpen, setImageUrlBoxIsOpen] = useState<boolean>(false);
   const imageInputRef = useRef<HTMLInputElement>(null);
 
-  const addImageToTweet = (e: MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const addImageToTweet = (e:any) => {
     e.preventDefault();
 
     if (!imageInputRef.current?.value) return;
@@ -124,7 +124,7 @@ function TweetBox({ setTweets }: Props) {
               />
               <button
                 type="submit"
-                onClick={(e)=>addImageToTweet(e)}
+                onClick={addImageToTweet}
                 className="font-bold  text-white"
               >
                 Add Image
