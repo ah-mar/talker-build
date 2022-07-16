@@ -12,7 +12,7 @@ interface Props {
   tweets: Tweet[];
 }
 
-const Home: NextPage = ({ tweets }: Props) => {
+const Home: any = ({ tweets }: Props) => {
   return (
     <div className="max-w-screen-xl mx-auto max-h-screen overflow-hidden">
       <Head>
