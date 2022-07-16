@@ -19,7 +19,7 @@ export default async function handler(
     } | order(_createdAt desc)
     `;
   const tweets: Tweet[] = await sanityClient.fetch(feedQuery);
-
+console.log("tweets in api", tweets)
   res.status(200).json({ tweets });
 }
 
